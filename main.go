@@ -12,7 +12,7 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func Greeting(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Right now it is" + time.Now().Format(time.Kitchen) + ". Enjoy the rest of your" + time.Now().Weekday().String() + "."))
+	w.Write([]byte("Right now it is " + time.Now().Format(time.Kitchen) + ". Enjoy the rest of your " + time.Now().Weekday().String() + "."))
 }
 
 func Random(w http.ResponseWriter, r *http.Request) {
